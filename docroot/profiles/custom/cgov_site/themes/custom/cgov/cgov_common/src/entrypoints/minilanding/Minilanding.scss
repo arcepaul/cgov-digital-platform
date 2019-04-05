@@ -8,26 +8,6 @@
 @import "~Core/styles/nci-foundation_mixins";
 @import "~Core/styles/nci-foundation_variables";
 @import "~Core/styles/thumbnailcards";
-// @import "~Core/styles/hero";
-// @import "~Core/styles/cards";
-
-.clearfix {
-  zoom: 1;
-  &:after {
-    clear: both;
-  }
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-}
-
-// Creates a flex wrapper for elements with equalheight class to hook on
-#content .flex-columns {
-  display: flex;
-  float: none;
-}
 
 .card {
   padding: .9375em;
@@ -44,7 +24,6 @@
 }
 
 .feature-card {
-
   h3 {
     margin-top: 0;
     font-weight: normal;
@@ -55,10 +34,10 @@
   div {
     margin-bottom: 1em;
   }
+
   a {
     padding: 1.875em;
     display: block;
-    @extend .clearfix;
 
     &:hover {
       text-decoration: none;
@@ -103,7 +82,6 @@
     color: $white;
     padding: 1em 2em 1em 1em;
     display: block;
-    /* TODO: add this image to the sprite */
     background-color: #403f3f;
     @extend %card-link-hover;
 
@@ -125,6 +103,7 @@
       margin: 1.25em 0;
     }
   }
+
   .feature-card {
 
     a {

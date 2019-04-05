@@ -13,6 +13,7 @@
 /***  BEGIN FOUNDATION STYLES ***/
 
 /****************** NCI UTILITIES ********************/
+@import "~Core/styles/equalheights"; // additional flex display support
 @import "~Styles/sprites/svg-sprite"; //sprites are sometimes used in *_overrides files
 
 @import "~Core/styles/nci-foundation";
@@ -70,6 +71,7 @@
 @import "~Core/styles/materials_to_share";
 @import "~Core/styles/lists";
 @import "~Core/styles/managed-lists";
+@import "~Core/styles/topicFeature";
 @import "~Core/styles/videos";
 @import "~Core/libraries/tooltips/referenceTooltip";
 @import "~Core/styles/errorPage";

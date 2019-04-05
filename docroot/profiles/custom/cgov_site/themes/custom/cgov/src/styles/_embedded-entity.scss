@@ -1,6 +1,6 @@
 .embedded-entity {
   margin-bottom: 2.5em;
-  
+
   &.align-right {
     margin: 0 0 2.5em 2.5em;
   }
@@ -34,6 +34,16 @@
 
     &[data-entity-embed-display*="_large"] {
       width: 75%;
+    }
+
+    &[data-entity-embed-display*="feature_card"] {
+      width: 33.33%;
+      position: relative;
+      margin-bottom: 1em;
+      border: 1px solid #818181;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.15);
     }
   }
 }
