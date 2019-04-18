@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.cgov_cancer_research.field_date_reviewed
     - field.field.node.cgov_cancer_research.field_date_updated
     - field.field.node.cgov_cancer_research.field_feature_card_description
-    - field.field.node.cgov_cancer_research.field_image_article
     - field.field.node.cgov_cancer_research.field_image_promotional
     - field.field.node.cgov_cancer_research.field_list_description
     - field.field.node.cgov_cancer_research.field_page_description
@@ -97,21 +96,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_image_article:
-    weight: 12
-    settings:
-      entity_browser: cgov_image_browser
-      field_widget_display: rendered_entity
-      field_widget_remove: true
-      selection_mode: selection_append
-      field_widget_display_settings:
-        view_mode: image_reference_field_form
-      field_widget_edit: false
-      field_widget_replace: false
-      open: false
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
     region: content
   field_image_promotional:
     weight: 13
