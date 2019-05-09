@@ -16,14 +16,14 @@
 <div class="equalheight bgWhite {{ content.field_cthp_card_theme|field_value }}">
   <h2>{{ content.field_cthp_card_title}}</h2>
   <div>
-    <a href="{{ url }}">{{ image }}</a>
+    {% if image %}
+      <div class="cthp-card-image">
+        <a href="{{ url }}">{{ image }}</a>
+      </div>
+    {% endif %}
     {% if description %}
       <div class="cardBody">
-        <ul>
-          <li>
-            <a href="{{ url }}" class="arrow-link">{{ description }}</a>
-          </li>
-        </ul>
+        <a href="{{ url }}" class="arrow-link">{{ description }}</a>
       </div>
     {% endif %}
   </div>
