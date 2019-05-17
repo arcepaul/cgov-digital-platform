@@ -295,4 +295,23 @@ ul.collaborators li {
 	}
 }
 
+// #1516 content is pulled in directly from CDR but does not include some divs(script and divs for audio) that were outputted in percussion.  
+// This overrides extra padding given the content pulled in
+@include bp(large-up){
+	.contentzone {
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}
+
+// Tweak to the layout, adjusting for new implementation for audio file
+.CDR_audiofile {
+	width: 25px;
+	height: 25px;
+	font-size: 16px;
+	background-position: 6.0241% 96.799%;
+	border: 0;
+	vertical-align: middle;
+}
 /*** END PDQ Styles ***/
