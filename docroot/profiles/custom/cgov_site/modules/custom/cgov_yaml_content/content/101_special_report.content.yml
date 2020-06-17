@@ -64,7 +64,7 @@
         - format: "full_html"
           value: |
             <div class="temp-block">
-              <p><span class=" filetype pdf annual-pdf annual-pdf">&nbsp;</span>Annual Plan & Budget Proposal At A Glance</p>
+              <a href="#"><span class="filetype pdf annual-pdf"></span>Annual Plan & Budget Proposal At A Glance</a>
             </div>
       type: "cgov_card_borderless"
     - entity: 'paragraph'
