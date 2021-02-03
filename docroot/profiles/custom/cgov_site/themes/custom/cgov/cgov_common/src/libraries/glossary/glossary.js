@@ -3,7 +3,11 @@
  * Sets app config for initialization.
  */
 
-import initialize from '@nciocpl/glossary-app';
+// import initialize from '@nciocpl/glossary-app';
+const initialize = () => {
+  throw new Error("This has been removed for due to issue #3003");
+};
+
 import { getCanonicalURL, getDocumentLanguage, getMetaData, parseUrl } from 'Utilities';
 
 const getAlternateLangLink = (alternateUrls, currLang) => {
